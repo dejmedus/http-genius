@@ -23,7 +23,7 @@ export function createQuestion() {
     // Use a compare function that randomly returns -1 or 1 to sort the array
     const randOptions = optionsArr.sort(() => Math.random() < 0.5 ? -1 : 1);
 
-    // 200, 'Ok', [ '404', '407', '102', '200' ]
+    // 200, 'Ok', [ 'Ok', 'Not Found', 'Continue', 'Accepted' ]
     return {
         statusNum: randStatus,
         status: httpStatuses[randStatus],
